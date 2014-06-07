@@ -1,10 +1,10 @@
 # a data loading function is in a seperate R file
-source("loading_power_data.R")
-data <- loadData()
+#source("loading_power_data.R")
+#data <- loadData()
 
 dev.new()
 
-par(mfrow=c(2,2))
+par(mfrow=c(2,2), bg="transparent")
 
 with(data, {
         plot(Global_active_power ~ DateTime, type="l",

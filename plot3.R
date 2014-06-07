@@ -3,6 +3,7 @@ source("loading_power_data.R")
 data <- loadData()
 
 dev.new()
+par(bg="transparent")
 
 with(data, {
         plot(DateTime, Sub_metering_1, type="l", col="black",

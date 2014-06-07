@@ -1,6 +1,6 @@
 # a data loading function is in a seperate R file
-#source("loading_power_data.R")
-#data <- loadData()
+source("loading_power_data.R")
+data <- loadData()
 
 dev.new()
 par(bg="transparent")
@@ -18,5 +18,5 @@ with(data, {
 
 dev.copy(png, filename="plot3.png", width=480, height=480) # PNG file output
 dev.off()
-#dev.off()
+dev.off()
 

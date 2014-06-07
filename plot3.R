@@ -18,3 +18,5 @@ with(data, {
 
 dev.copy(png, filename="plot3.png", width=480, height=480) # PNG file output
 dev.off()
+dev.off()
+

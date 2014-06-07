@@ -1,6 +1,6 @@
 # a data loading function is in a seperate R file
 source("loading_power_data.R")
-data <- loadData("household_power_consumption.txt")
+data <- loadData()
 
 dev.new()
 

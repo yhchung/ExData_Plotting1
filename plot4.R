@@ -1,6 +1,6 @@
 # a data loading function is in a seperate R file
-#source("loading_power_data.R")
-#data <- loadData()
+source("loading_power_data.R")
+data <- loadData()
 
 dev.new()
 
@@ -19,7 +19,7 @@ with(data, {
         lines(DateTime, Sub_metering_3, col="blue")
         legend("topright", lty=1, lwd=1, cex=0.8, 
                bty="n",
-               y.intersp = 0.7,
+               y.intersp = 0.6,
                legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
                col=c("black", "red", "blue"))
         
